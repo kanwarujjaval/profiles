@@ -1,0 +1,8 @@
+<footer>
+Copyright (c) | Kanwar Ujjaval Singh
+</footer>
+</body>
+</html>
+<?php
+mysql_close($connection);
+?>

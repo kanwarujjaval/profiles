@@ -1,0 +1,1 @@
+[30-Oct-2013 14:08:53 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/rudrag/public_html/demo/profiles/include/connect.php on line 3

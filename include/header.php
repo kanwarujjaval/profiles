@@ -1,0 +1,50 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<html>
+	<head>
+	<meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+	<title>Intern Portal</title>
+	<!--[if lt IE9]>
+	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	</head>
+<body>
+<header>
+<div class="content">
+<h1>Internship Portal</h1>
+</div>
+<nav>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="year.php">Profiles</a></li>
+<?php
+if(isset($_SESSION['username']))
+{
+echo "<li><a href=\"user.php?id={$_SESSION['id']}\">My Profile</a></li>";
+echo "<li><a href=\"edit_user.php\">Edit Profile</a></li>";
+echo "<li><a href=\"setpic.php\">Profile Image</a></li>";
+echo "<li><a href=\"change.php\">Change Password</a></li>";
+echo "<li><a href=\"logout.php\">Logout</a></li>";
+}
+else
+{
+echo "<li><a href=\"login.php\">Login</a></li>";
+}
+?>
+</ul>
+</nav>
+</header>
+
+<!--	<div id="prof2">
+		<div class="content">
+			<h2>Description</h2>
+			<a class="action" href="#">Call to action</a>
+		</div>
+	</div>-->

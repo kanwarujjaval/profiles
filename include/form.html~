@@ -1,0 +1,22 @@
+<form action="update.php" method="post">
+<input type="text" name="name" placeholder="Your Name" required/><br/>
+Select your Batch<br/>
+<select>
+<optgroup label="batch">
+<option value="2014">2010-2014</option>
+<option value="2015">2011-2015</option>
+<option value="2016">2012-2016</option>
+<option value="2017">2013-2017</option>
+</optgroup>
+</select>
+<br/>Select your Stream : <br/>
+<input type="radio" name="stream" value="it" required/> IT<br>
+<input type="radio" name="stream" value="cse" required/> CSE<br>
+<textarea name="profile" id="profile" placeholder="Your Profile" required/></textarea><br/>
+<textarea name="skills" id="skills" placeholder="Your Skills" required/></textarea><br/>
+<textarea name="lang" id="lang" placeholder="Languages you know" required/></textarea><br/>
+<textarea name="api" id="api" placeholder="Technologies and APIs" required/></textarea><br/>
+<textarea name="tools" id="tools" placeholder="Tools" required/></textarea><br/>
+<textarea name="interest" id="interest" placeholder="Your Interests" required/></textarea><br/>
+<input type="submit" value="Send">
+</form>
